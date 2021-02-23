@@ -10,8 +10,23 @@ using Newtonsoft.Json;
 
 namespace CodeChallenge
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class Function1
     {
+        /// <summary>
+        /// This is the first Assure funciton for the CodeChallenge project
+        /// </summary>
+        /// <remarks>
+        /// This function needs the "puzzle" GET parameter
+        /// </remarks>
+        /// <param name="req"></param>
+        /// <param name="log"></param>
+        /// <returns>
+        /// The function will return the same puzzle string with the current 
+        /// Santa's floor location and the number of the first basement floor
+        /// </returns>
         [FunctionName("Function1")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
@@ -47,6 +62,11 @@ namespace CodeChallenge
             return new OkObjectResult(responseMessage);
         }
 
+        /// <summary>
+        /// Private function to find the current Santa's location
+        /// </summary>
+        /// <param name="puzzle"></param>
+        /// <returns>Floor number</returns>
         public static int E1_FindFloor(String puzzle)
         {
             char[] chPuzzle = puzzle.ToCharArray();
@@ -57,6 +77,11 @@ namespace CodeChallenge
             return ups.Length - dws.Length;
         }
 
+        /// <summary>
+        /// Private function to find the first basement floor
+        /// </summary>
+        /// <param name="puzzle"></param>
+        /// <returns>Floor number</returns>
         public static int E2_FirstBasement(String puzzle)
         {
             char[] chPuzzle = puzzle.ToCharArray();

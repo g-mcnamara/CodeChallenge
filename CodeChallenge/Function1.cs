@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 namespace CodeChallenge
 {
     /// <summary>
-    /// 
+    /// This class contains the solution for the first stage on the Advent of Code in https://adventofcode.com/2015/day/1
     /// </summary>
     public static class Function1
     {
@@ -21,6 +21,9 @@ namespace CodeChallenge
         /// <remarks>
         /// This function needs the "puzzle" GET parameter
         /// </remarks>
+        /// <example>
+        /// http://localhost/api/Function1?puzzle=((((()(()()(())(()))))))))()()()()())()))))))))))))()()()((((())))()()()()))))(((
+        /// </example>
         /// <param name="req"></param>
         /// <param name="log"></param>
         /// <returns>

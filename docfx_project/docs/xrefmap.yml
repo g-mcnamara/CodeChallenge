@@ -1,0 +1,54 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: CodeChallenge
+  name: CodeChallenge
+  href: api/CodeChallenge.html
+  commentId: N:CodeChallenge
+  fullName: CodeChallenge
+  nameWithType: CodeChallenge
+- uid: CodeChallenge.Function1
+  name: Function1
+  href: api/CodeChallenge.Function1.html
+  commentId: T:CodeChallenge.Function1
+  fullName: CodeChallenge.Function1
+  nameWithType: Function1
+- uid: CodeChallenge.Function1.E1_FindFloor(System.String)
+  name: E1_FindFloor(String)
+  href: api/CodeChallenge.Function1.html#CodeChallenge_Function1_E1_FindFloor_System_String_
+  commentId: M:CodeChallenge.Function1.E1_FindFloor(System.String)
+  fullName: CodeChallenge.Function1.E1_FindFloor(System.String)
+  nameWithType: Function1.E1_FindFloor(String)
+- uid: CodeChallenge.Function1.E1_FindFloor*
+  name: E1_FindFloor
+  href: api/CodeChallenge.Function1.html#CodeChallenge_Function1_E1_FindFloor_
+  commentId: Overload:CodeChallenge.Function1.E1_FindFloor
+  isSpec: "True"
+  fullName: CodeChallenge.Function1.E1_FindFloor
+  nameWithType: Function1.E1_FindFloor
+- uid: CodeChallenge.Function1.E2_FirstBasement(System.String)
+  name: E2_FirstBasement(String)
+  href: api/CodeChallenge.Function1.html#CodeChallenge_Function1_E2_FirstBasement_System_String_
+  commentId: M:CodeChallenge.Function1.E2_FirstBasement(System.String)
+  fullName: CodeChallenge.Function1.E2_FirstBasement(System.String)
+  nameWithType: Function1.E2_FirstBasement(String)
+- uid: CodeChallenge.Function1.E2_FirstBasement*
+  name: E2_FirstBasement
+  href: api/CodeChallenge.Function1.html#CodeChallenge_Function1_E2_FirstBasement_
+  commentId: Overload:CodeChallenge.Function1.E2_FirstBasement
+  isSpec: "True"
+  fullName: CodeChallenge.Function1.E2_FirstBasement
+  nameWithType: Function1.E2_FirstBasement
+- uid: CodeChallenge.Function1.Run(HttpRequest,ILogger)
+  name: Run(HttpRequest, ILogger)
+  href: api/CodeChallenge.Function1.html#CodeChallenge_Function1_Run_HttpRequest_ILogger_
+  commentId: M:CodeChallenge.Function1.Run(HttpRequest,ILogger)
+  fullName: CodeChallenge.Function1.Run(HttpRequest, ILogger)
+  nameWithType: Function1.Run(HttpRequest, ILogger)
+- uid: CodeChallenge.Function1.Run*
+  name: Run
+  href: api/CodeChallenge.Function1.html#CodeChallenge_Function1_Run_
+  commentId: Overload:CodeChallenge.Function1.Run
+  isSpec: "True"
+  fullName: CodeChallenge.Function1.Run
+  nameWithType: Function1.Run

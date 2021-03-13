@@ -4,6 +4,9 @@ using CodeChallenge;
 
 namespace CodeChallenge.Test
 {
+    /// <summary>
+    /// This class contains unit tests for the Day1 class of the CodeChallenge project
+    /// </summary>
     public class Day1Test
     {
         [Fact]

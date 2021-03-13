@@ -1,4 +1,7 @@
+- name: Using DocFX Quick Notes
+  href: DocFX.md
 - name: Introduction
   href: intro.md
 - name: Stage 1
   href: stage1.md
+

@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>DocFX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="DocFX ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="docfx">DocFX</h1>
+
+<ul>
+<li>What is DocFX? Static document generation tool</li>
+<li>Multiplataform <em>Not</em> constranted to windows</li>
+<li>Runs on command line</li>
+<li>It needs .NET Code to work</li>
+</ul>
+<h2 id="install-docfx">Install DocFX</h2>
+<ul>
+<li>The instructions for the installation are in the DocFX page <a href="https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html">https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html</a></li>
+<li>In my case I used -choco- because it was installed together with the node libraries, using a command window in administrative mode</li>
+<li>Goto the solution folder</li>
+<li>run <code>docfx init -q</code></li>
+<li>This will create a new project alongside other Visual Studio projects.</li>
+</ul>
+<h2 id="configuring-environment">Configuring environment</h2>
+<ul>
+<li>To generate documentation <strong>it is necessary to comment on the source code</strong> because that is where the information will be extracted.</li>
+</ul>
+<h3 id="using-visual-studio">Using <strong>Visual Studio</strong></h3>
+<ul>
+<li>The project file must indicate the location of the xml file where the comments will be replicated.</li>
+<li>Check that docfx.json has the correct path pointing to the project file in the <code>metadata</code> section</li>
+</ul>
+<pre><code class="lang-json">&quot;src&quot;: [
+        {
+          &quot;cwd&quot; : &quot;../&quot;,
+          &quot;files&quot;: [
+            &quot;projectname/**.csproj&quot;
+          ]
+        }
+	,]
+</code></pre>
+<h3 id="for-environments-using-using-visual-studio-code">For environments using <strong>using Visual Studio Code</strong></h3>
+<ul>
+<li><p>Verify that the <code>metadata</code> section of the docfx.json file is pointing correctly to the root of the solution and that the list of<code> files</code> has all the extensions of the source code files that will be parsed</p>
+</li>
+<li><p>Single project sample</p>
+</li>
+</ul>
+<pre><code class="lang-json">&quot;src&quot;: [
+        {
+          &quot;cwd&quot; : &quot;../projectname/&quot;,
+          &quot;files&quot;: [
+            &quot;**.cs, 
+			**.js&quot;
+          ]
+        }
+	,]
+</code></pre>
+<ul>
+<li>Multi project sample</li>
+</ul>
+<pre><code class="lang-json">&quot;src&quot;: [
+        {
+          &quot;cwd&quot; : &quot;../&quot;,
+          &quot;files&quot;: [
+            &quot;projectname1/**.cs&quot;, 
+			&quot;projectname1/**.js&quot;,
+			&quot;projectname2/**.cs&quot;, 
+			&quot;projectname2/**.js&quot;
+          ]
+        }
+	,]
+</code></pre>
+<h2 id="generating-metadata">Generating metadata</h2>
+<ul>
+<li><p>This can be performed from:</p>
+<ul>
+<li><strong>Developer Command Prompt For VS-X</strong></li>
+<li><strong>Developer Command Prompt inside Visual Studio</strong></li>
+<li><strong>Command window</strong></li>
+</ul>
+</li>
+<li><p>Verify that the working directory is set to <code>[solution directory]/docfx_project</code></p>
+</li>
+<li><p>Run the command to generate the metadata <code>docfx metadata docfx.json</code></p>
+</li>
+</ul>
+<h2 id="generating-documentation-site">Generating documentation site</h2>
+<ul>
+<li><p>Once the metadata has been created</p>
+</li>
+<li><p>To configure the correct place to host the documentation website within the Github repository, the docfx.json file in the <code>build</code> section needs to be modified to create the 'docs' directory at the root of the solution</p>
+</li>
+</ul>
+<pre><code class="lang-json">	&quot;dest&quot;: &quot;../docs&quot;,
+</code></pre>
+<ul>
+<li>Run the command <code>docfx build docfx.json</code> to build the documentation site</li>
+<li>This should generate a <code>docs</code> folder in the root of the solution with the content of the project documentation website.</li>
+<li>Finally, the site can be tested using the <code>docfx serve ..\docs</code> command. The resulting message will be the URL where the documentation can be browsed.</li>
+</ul>
+<h2 id="notes">Notes:</h2>
+<ul>
+<li>Pushing the project to the GitHub repo, and setting up the option to use a Doc-Pages, the site can be browsed.</li>
+<li>Commands to generate the <strong>metadata</strong> and <strong>build</strong> the documentation can be automated in the CI pipeline</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/g-mcnamara/CodeChallenge/blob/main/docfx_project/articles/DocFX.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

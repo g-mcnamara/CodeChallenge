@@ -1,18 +1,42 @@
 {
   "homepages": [],
-  "source_base_path": "c:/Users/guillermo.mcnamara/source/repos/CodeChallenge/docfx_project",
+  "source_base_path": "C:/Users/guillermo.mcnamara/source/repos/CodeChallenge/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CodeChallenge.Function1.yml",
+      "source_relative_path": "api/CodeChallenge.Day1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CodeChallenge.Function1.html",
-          "hash": "czEjPuKXJ1mFpCN3Khithg=="
+          "relative_path": "api/CodeChallenge.Day1.html",
+          "hash": "7SH4Nmo+Oq5RkBV0rQh91g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodeChallenge.Test.Day1Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodeChallenge.Test.Day1Test.html",
+          "hash": "RcJjso2pjAFNf2asewn07w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodeChallenge.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodeChallenge.Test.html",
+          "hash": "9CXhXBHZe4ZVcE20PlVJiA=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/CodeChallenge.html",
-          "hash": "VrCss+fd8+NSnYhdiLAC5A=="
+          "hash": "5+Zh2GDWuE5NuHH4xN48/w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -36,7 +60,7 @@
           "hash": "Lu9oBNChJVJWEmzUJqgNRA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,7 +69,19 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "HPGwPdjxL46zFedT753/Aw=="
+          "hash": "m0AT4ySaGpBExEFRJxkSIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/DocFX.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/DocFX.html",
+          "hash": "mBDfq0bsYzlhX3uGpU4R1A=="
         }
       },
       "is_incremental": false,
@@ -60,19 +96,22 @@
           "hash": "8NaiQR0B4C9rs1a2xqwvdQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/stage1.md",
       "output": {
         ".html": {
           "relative_path": "articles/stage1.html",
-          "hash": "dQP75Sk3uS5f71vbONk7qw=="
+          "hash": "kYKszCb/RnzqesMkZbkuNQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,7 +120,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "71N5+LnFo4hawyKwXPCDDw=="
+          "hash": "wezmTsbBUg8iWBOW5B+/Hg=="
         }
       },
       "is_incremental": false,
@@ -96,7 +135,7 @@
           "hash": "BLejTtDpiGwhG2WD++QHAQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,7 +144,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "tZFktCeTSxoClJAG2TWIyg=="
+          "hash": "DGa+dOjJ51Ky2kZXeNQyKg=="
         }
       },
       "is_incremental": false,
@@ -124,13 +163,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 5,
           "skipped_file_count": 4
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 2,
+          "total_file_count": 4,
           "skipped_file_count": 2
         },
         "TocDocumentProcessor": {

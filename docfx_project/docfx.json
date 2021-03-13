@@ -3,8 +3,8 @@
     {
       "src": [
         {
-          "cwd" : "../CodeChallenge/",
-          "files": ["**.cs"]
+            "cwd": "../",
+            "files": [ "CodeChallenge/**.cs", "CodeChallengeUnitTesting1/**.cs" ]
         }
       ],
       "dest": "api",

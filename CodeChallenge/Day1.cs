@@ -13,7 +13,7 @@ namespace CodeChallenge
     /// <summary>
     /// This class contains the solution for the first stage on the Advent of Code in https://adventofcode.com/2015/day/1
     /// </summary>
-    public static class Function1
+    public static class Day1
     {
         /// <summary>
         /// This is the first Assure funciton for the CodeChallenge project
@@ -30,7 +30,7 @@ namespace CodeChallenge
         /// The function will return the same puzzle string with the current 
         /// Santa's floor location and the number of the first basement floor
         /// </returns>
-        [FunctionName("Function1")]
+        [FunctionName("Day1")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
@@ -52,8 +52,8 @@ namespace CodeChallenge
             }
             else
             {
-                int intSantasFloor = E1_FindFloor(puzzle);
-                int firstBasement = E2_FirstBasement(puzzle);
+                int intSantasFloor = FindFloor(puzzle);
+                int firstBasement = FirstBasement(puzzle);
 
                 responseMessage = $"Hello, Santa is on floor {intSantasFloor.ToString()}. The first basement is {firstBasement.ToString()}";
             }
@@ -70,7 +70,7 @@ namespace CodeChallenge
         /// </summary>
         /// <param name="puzzle"></param>
         /// <returns>Floor number</returns>
-        public static int E1_FindFloor(String puzzle)
+        public static int FindFloor(String puzzle)
         {
             char[] chPuzzle = puzzle.ToCharArray();
 
@@ -85,7 +85,7 @@ namespace CodeChallenge
         /// </summary>
         /// <param name="puzzle"></param>
         /// <returns>Floor number</returns>
-        public static int E2_FirstBasement(String puzzle)
+        public static int FirstBasement(String puzzle)
         {
             char[] chPuzzle = puzzle.ToCharArray();
             int floorPos = 0;

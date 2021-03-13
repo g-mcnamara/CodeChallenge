@@ -1,7 +1,11 @@
-- name: Using DocFX Quick Notes
-  href: DocFX.md
 - name: Introduction
   href: intro.md
-- name: Stage 1
-  href: stage1.md
+- name: Challenge
+  items:
+  - name: Stage 1
+    href: stage1.md
+- name: Resources
+  items:
+  - name: Using DocFX Quick Notes
+    href: DocFX.md
 

@@ -84,7 +84,7 @@
           "hash": "mBDfq0bsYzlhX3uGpU4R1A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,22 +96,19 @@
           "hash": "8NaiQR0B4C9rs1a2xqwvdQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/stage1.md",
       "output": {
         ".html": {
           "relative_path": "articles/stage1.html",
-          "hash": "kYKszCb/RnzqesMkZbkuNQ=="
+          "hash": "xauHcgyi0GfGRO6fY9g8xg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {

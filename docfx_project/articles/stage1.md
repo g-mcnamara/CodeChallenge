@@ -39,4 +39,4 @@ What is the position of the character that causes Santa to first enter the basem
 For the solution of this level, an Azure Function was used that calls two private functions, which solve each challenge separately and return the solution.
 In a single text string, the function returns the body with the introduced puzzle and the answers to the two challenges
 
-[Go to the solution](../api/CodeChallenge.Function1.yml)
+[Go to the solution](../api/CodeChallenge.Day1.yml)
